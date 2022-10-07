@@ -24,13 +24,14 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import com.auth0.jwt.JWT;
 import com.auth0.jwt.algorithms.Algorithm;
 
-import br.com.icarros.icontas.config.security.data.SecurityConstsICarros;
-import br.com.icarros.icontas.config.security.data.UserDetailsICarros;
-import br.com.icarros.icontas.config.security.service.UserDetailsServiceImpl;
-import br.com.icarros.icontas.dto.request.UsuarioRequest;
-import br.com.icarros.icontas.entity.Usuario;
-import br.com.icarros.icontas.exception.UsuarioEOuSenhaInvalidoException;
-import br.com.icarros.icontas.repository.UsuarioRepository;
+import br.com.banco.contas.config.security.data.SecurityConstsICarros;
+import br.com.banco.contas.config.security.data.UserDetailsICarros;
+import br.com.banco.contas.config.security.service.UserDetailsServiceImpl;
+import br.com.banco.contas.dto.request.UsuarioRequest;
+import br.com.banco.contas.entity.Usuario;
+import br.com.banco.contas.exception.UsuarioEOuSenhaInvalidoException;
+import br.com.banco.contas.repository.UsuarioRepository;
+import br.com.banco.contas.service.LoginService;
 
 @SpringBootTest
 @ExtendWith(MockitoExtension.class)

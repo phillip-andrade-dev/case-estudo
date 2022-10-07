@@ -1,16 +1,18 @@
 package br.com.icarros.icontas.service;
 
-import br.com.icarros.icontas.dto.request.CorrentistaRequest;
-import br.com.icarros.icontas.dto.request.GerenteCorrentistaRequest;
-import br.com.icarros.icontas.dto.response.CorrentistaResponse;
-import br.com.icarros.icontas.dto.response.ListaCorrentistaResponse;
-import br.com.icarros.icontas.entity.Correntista;
-import br.com.icarros.icontas.entity.Gerente;
-import br.com.icarros.icontas.entity.enums.UF;
-import br.com.icarros.icontas.exception.CorrentistaNaoEncontradoException;
-import br.com.icarros.icontas.exception.RegraDeNegocioException;
-import br.com.icarros.icontas.repository.CorrentistaRepository;
-import br.com.icarros.icontas.repository.GerenteRepository;
+import br.com.banco.contas.dto.request.CorrentistaRequest;
+import br.com.banco.contas.dto.request.GerenteCorrentistaRequest;
+import br.com.banco.contas.dto.response.CorrentistaResponse;
+import br.com.banco.contas.dto.response.ListaCorrentistaResponse;
+import br.com.banco.contas.entity.Correntista;
+import br.com.banco.contas.entity.Gerente;
+import br.com.banco.contas.entity.enums.UF;
+import br.com.banco.contas.exception.CorrentistaNaoEncontradoException;
+import br.com.banco.contas.exception.RegraDeNegocioException;
+import br.com.banco.contas.repository.CorrentistaRepository;
+import br.com.banco.contas.repository.GerenteRepository;
+import br.com.banco.contas.service.CorrentistaService;
+
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.ArgumentCaptor;

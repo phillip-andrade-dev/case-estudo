@@ -18,8 +18,9 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 
-import br.com.icarros.icontas.entity.Usuario;
-import br.com.icarros.icontas.repository.UsuarioRepository;
+import br.com.banco.contas.config.security.service.UserDetailsServiceImpl;
+import br.com.banco.contas.entity.Usuario;
+import br.com.banco.contas.repository.UsuarioRepository;
 
 @ExtendWith(MockitoExtension.class)
 public class UserDetailsServiceImplUnitTest {

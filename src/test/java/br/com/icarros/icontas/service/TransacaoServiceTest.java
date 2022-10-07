@@ -1,20 +1,22 @@
 package br.com.icarros.icontas.service;
 
-import br.com.icarros.icontas.config.security.data.UserDetailsICarros;
-import br.com.icarros.icontas.config.security.service.UserDetailsServiceImpl;
-import br.com.icarros.icontas.dto.request.CorrentistaRequest;
-import br.com.icarros.icontas.dto.request.DepositaRequest;
-import br.com.icarros.icontas.dto.request.GerenteCorrentistaRequest;
-import br.com.icarros.icontas.dto.response.DepositaResponse;
-import br.com.icarros.icontas.dto.response.SaldoResponse;
-import br.com.icarros.icontas.entity.Correntista;
-import br.com.icarros.icontas.entity.Transacao;
-import br.com.icarros.icontas.entity.Usuario;
-import br.com.icarros.icontas.entity.enums.TipoOperacao;
-import br.com.icarros.icontas.entity.enums.UF;
-import br.com.icarros.icontas.exception.RegraDeNegocioException;
-import br.com.icarros.icontas.repository.CorrentistaRepository;
-import br.com.icarros.icontas.repository.TransacaoRepository;
+import br.com.banco.contas.config.security.data.UserDetailsICarros;
+import br.com.banco.contas.config.security.service.UserDetailsServiceImpl;
+import br.com.banco.contas.dto.request.CorrentistaRequest;
+import br.com.banco.contas.dto.request.DepositaRequest;
+import br.com.banco.contas.dto.request.GerenteCorrentistaRequest;
+import br.com.banco.contas.dto.response.DepositaResponse;
+import br.com.banco.contas.dto.response.SaldoResponse;
+import br.com.banco.contas.entity.Correntista;
+import br.com.banco.contas.entity.Transacao;
+import br.com.banco.contas.entity.Usuario;
+import br.com.banco.contas.entity.enums.TipoOperacao;
+import br.com.banco.contas.entity.enums.UF;
+import br.com.banco.contas.exception.RegraDeNegocioException;
+import br.com.banco.contas.repository.CorrentistaRepository;
+import br.com.banco.contas.repository.TransacaoRepository;
+import br.com.banco.contas.service.TransacaoService;
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
